@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    /* border: 1px solid black; */
+    color: white;
+    z-index: 999;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid salmon; */
+    width: 80%;
+}
+
+.nav-brand{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-brand a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.burger{
+    display: block;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    margin: 3px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all .3s ease;
+}
+
+.nav-links{
+    display: none;
+    align-items: center;
+    /* border: 1px solid red; */
+    list-style: none;
+    transition: all 0.5s ease;
+}
+
+.links{
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.bk-img{
+    position: absolute;
+    top: 0;
+    /* border: 5px solid red; */
+    /* object-fit: scale-down; */
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/img/backgrounds/final.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1000;
+}
+
+#welcome{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.changing-text{
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.changing-text span{
+    display: none;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 20px;
+    text-transform: capitalize;
+    color: #000051;
+}
+
+.changing-text span.text-in{
+    display: block;
+    animation: textIn .5s ease;
+}
+
+.changing-text span.text-out{
+    animation: textOut .5s ease;
+}
+
+.sometext{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 30px auto;
+    color: #fff;
+}
+
+.buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons input[type="button"]{
+    padding: 15px;
+    width: 90%;
+    background-color: transparent;
+    border-color: #000051;
+    border-width: thin;
+    margin: 20px;
+    font-size: 1rem;
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px black;
+    text-transform: uppercase;
+    
+}
+
+.buttons input[type="button"]:hover{
+    background-color: #000051;
+}
+
+
+
+@keyframes textIn {
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes textOut {
+    0%{
+        transform: translateY(0%);
+    }
+
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+.burger.toggle .line1{
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.burger.toggle .line2{
+    /* transform: translateX(-200px); */
+    opacity: 0;
+    
+}
+.burger.toggle .line3{
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-links.navSlide{
+    position: fixed;
+    top: 8vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background-color: #371C9E;
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
+
+.nav-links.slideIn{
+    animation: slideIn .5s ease forwards alternate;
+}
+
+
+@keyframes slideIn {
+    from{
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+.nav-links li a{
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+    /* border: 1px solid black; */
+
+}
+
+.ab-us{
+    height: 100vh;
+    margin-top: 80px;
+}
+
+
+@media screen and (min-width: 50em) {
+    .nav-links{
+        display: flex;
+    }
+
+    .nav-links li a{
+        padding: 30px;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .bk-img{
+        height: 90vh;
+    }
+
+    .changing-text span{
+        font-size: 6rem;
+        /* margin-top: 50px; */
+    }
+
+    #welcome{
+        font-size: 3rem;
+    }
+
+    .sometext{
+        font-size: 1.5rem;
+        width: 80%;
+        /* margin-top: 70px; */
+    }
+
+    .buttons{
+        display: block;
+    }
+
+    .buttons input[type="button"]{
+        width: 15%;
+        padding: 20px;
+    }
+    
+    .buttons input[type="button"]:hover{
+        background-color: #000051;
+    }
+}
+
+@keyframes lhover {
+    
+}
+
