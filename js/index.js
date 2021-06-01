@@ -51,9 +51,19 @@ burger.addEventListener('click', () =>{
         clicked = true;
     }
     else{
-        navLinks.classList.remove("navSlide", "slideIn");
+        navLinks.classList.remove("navSlide");
         clicked = false;
     }
     
 });
 
+
+// carousel code
+
+const carousel = document.querySelector(".carousel").children;
+let carouselLength = carousel.length;
+
+
+let f = (...items) => items.map(item => console.log(item));
+
+f(1,2,3,4,5);

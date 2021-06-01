@@ -31,7 +31,7 @@ header{
     align-items: center;
     justify-content: space-between;
     /* border: 1px solid salmon; */
-    width: 80%;
+    width: 90%;
 }
 
 .nav-brand{
@@ -75,6 +75,7 @@ header{
     color: white;
     text-transform: uppercase;
     transition: all 0.5s ease;
+    /* border: 1px solid brown; */
 }
 
 .bk-img{
@@ -228,8 +229,77 @@ header{
 }
 
 .ab-us{
-    height: 100vh;
-    margin-top: 80px;
+    /* height: 100vh; */
+    margin-top: 50px;
+    /* border: 5px solid green; */
+}
+
+.title{
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    /* margin-top: 50px; */
+    /* border: 1px solid black; */
+}
+
+.ab-content, .carousel{
+    width: 90%;
+    margin: 50px auto;
+    /* background-color: #000051; */
+}
+
+.ab-content .item{
+    /* border: 1px solid brown; */
+    height: 20em;
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0px 3px 5px darkgray;
+    background: #fff;
+    color: #767779;
+    box-shadow: 0 6px 50px rgba(0,0,0,.05);
+}
+
+.ab-content .item p{
+    text-align: center;
+    padding: 20px;
+}
+
+.ab-content .item .number{
+    font-size: 3rem;
+    color: #000051;
+}
+
+.heading{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ab-content .item .text{
+
+}
+
+.carousel-item{
+    /* border: 1px solid black; */
+    height: 28em;
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0px 3px 5px darkgray;
+    background: #fff;
+    color: #767779;
+    box-shadow: 0 6px 50px rgba(0,0,0,.05);
+}
+
+.carousel-item p{
+    padding: 20px;
+}
+
+.carousel-text{
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel .carousel-item.hide{
+    display: block;
 }
 
 
@@ -239,7 +309,11 @@ header{
     }
 
     .nav-links li a{
-        padding: 30px;
+        padding: 0 30px;
+    }
+
+    .nav-links li a:hover{
+        color: #000051;
     }
 
     .burger{
@@ -247,7 +321,7 @@ header{
     }
 
     .bk-img{
-        height: 90vh;
+        height: 85vh;
     }
 
     .changing-text span{
@@ -267,6 +341,7 @@ header{
 
     .buttons{
         display: block;
+        border: 1px solid #000051;
     }
 
     .buttons input[type="button"]{
@@ -277,9 +352,45 @@ header{
     .buttons input[type="button"]:hover{
         background-color: #000051;
     }
+
+    .ab-us{
+        /* margin: 100px auto; */
+    }
+
+    .ab-content{
+        display: flex;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        /* width: 100%; */
+    }
+
+    .ab-content .item{
+        margin: 0 15px;
+        height: 25em;
+    }
+
+    .title{
+        font-size: 3rem;
+    }
+
+    .carousel{
+        display: flex;
+
+    }
+
+    .carousel-item{
+        width: 40em;
+        height: 35em;
+        padding: 30px;
+        
+    }
+
+    .carousel-item:not(:first-child){
+        margin-left: 50px;
+    }
+
+    
+
 }
 
-@keyframes lhover {
-    
-}
 
