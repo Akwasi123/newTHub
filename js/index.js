@@ -60,10 +60,36 @@ burger.addEventListener('click', () =>{
 
 // carousel code
 
-const carousel = document.querySelector(".carousel").children;
-let carouselLength = carousel.length;
-
-
-let f = (...items) => items.map(item => console.log(item));
-
-f(1,2,3,4,5);
+const swiper = new Swiper('.swiper-container', {
+    // Optional parameterr
+    spaceBetween: 30,
+    loop: true,
+    speed: 1000,
+    effect: 'slide',
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,    
+            slidesPerGroup: 3,
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+    },
+  
+  });
+  
