@@ -86,7 +86,7 @@ header{
     /* object-fit: scale-down; */
     height: 110vh;
     width: 100%;
-    background-image: url(../assets/img/backgrounds/final.svg);
+    background-image: url("../assets/img/backgrounds/final.svg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1000;
@@ -230,7 +230,7 @@ header{
 }
 
 .ab-us{
-    margin-top: 50px;
+    margin-top: 30px;
     padding-top: 20px;
     /* border: 5px solid green; */
 }
@@ -285,17 +285,18 @@ header{
 
 .services{
     padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #116CAA;
+    color: white;
 }
 
 .swiper-container{
-    height: 30em;
+    height: 35em;
     width: 88%;
-    margin: 50px auto;
+    margin: 40px auto;
 }
 
-.swiper-wrapper{
-    height: 100vh !important;
-}
+
 
 .swiper-slide{
     display: flex;
@@ -303,9 +304,10 @@ header{
     text-align: center;
     /* font-size: 4rem; */
     /* padding: 20px; */
-    box-shadow: 0 6px 50px rgba(0,0,0,.05);
-    color: #767779;
-    margin-bottom: 20px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.2);
+    color: white;
+    /* padding: 30px !important; */
+    height: 32em !important;
 }
 
 .swiper-slide .item img{
@@ -316,21 +318,21 @@ header{
 }
 
 .swiper-slide .item .heading{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 5px;
     font-weight: bold;
 }
 
 .swiper-slide .item .text{
     font-size: 1rem;
-    padding: 20px;
+    padding: 5px;
 }
 
 .swiper-pagination{
     top: 94% !important;
     right: 0;
     left: 0;
-    padding: 10px;
+    margin: 10px !important;
 }
 
 .swiper-pagination-bullet{
@@ -340,8 +342,74 @@ header{
 }
 
 .swiper-pagination-bullet-active{
-    background-color: #000051 !important;
+    background-color: #fff !important;
 }
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    /* padding: 20px; */
+    margin: auto;
+}
+    
+
+
+.div1 .item img, .div2 .item img, .div3 .item img{
+    display: block;
+    margin: 20px auto;
+    
+}
+
+.div1 .item, .div2 .item, .div3 .item{
+    height: 22em;
+    width: 100%;
+    margin: 20px auto;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0,0,0,.2);
+}
+
+.div1 .item .text, .div2 .item .text, .div3 .item .text{
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.pandS{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.project-intro{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/img/backgrounds/rocketBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-intro .title{
+    color: white;
+    padding-top: 50px;
+}
+
+/* 116CAA */
+
+.proj{
+    height: 100vh;
+    /* background: linear-gradient(to right, #981F8E, #E9548A); */
+    /* background-color: #981F8E; */
+}
+
+
 
 /* DESKTOP STYLES */
 
@@ -416,7 +484,14 @@ header{
         font-size: 3rem;
     }
 
-    
+    .parent{
+        flex-wrap: nowrap;
+    }
+
+    .div1 .item, .div2 .item, .div3 .item{
+        width: auto;
+        margin: 20px;
+    }
 
 }
 
