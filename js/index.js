@@ -60,7 +60,7 @@ burger.addEventListener('click', () =>{
 
 // carousel code
 
-const swiper = new Swiper('.swiper-container', {
+const swiper1 = new Swiper('.swiper1', {
     // Optional parameterr
     spaceBetween: 30,
     loop: true,
@@ -91,5 +91,17 @@ const swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
   
+  });
+
+  const swiper2 = new Swiper(".mySwiper", {
+    direction: "vertical",
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
   
