@@ -341,9 +341,15 @@ header{
     margin: 10px;
 }
 
-.swiper1 .swiper-pagination-bullet-active{
+.swiper1 .swiper-pagination-bullet-active, .mySwiper .swiper-pagination-bullet-active{
     background-color: #fff !important;
 }
+
+.mySwiper .swiper-pagination-bullet{
+    background-color: #fff !important;
+}
+
+
 
 .parent {
     display: flex;
@@ -478,14 +484,55 @@ header{
 
 .left-content .title{
     text-align: left;
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 .swiper-container.mySwiper{
     width: 100%;
     /* margin-left: 100px; */
     height: 500px;
-    border: 1px solid #000051;
+    /* border: 1px solid #000051; */
+}
+
+.n1{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/backgrounds/2774835.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.n2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/backgrounds/final.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.n3{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/backgrounds/Fluid_background_2019_2-1-18.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.newsItem{
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.newsItem .heading{
+    font-size: 3.5rem;
+    color: white;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.newsItem .text{
+    color: #767779;
+    width: 100%;
 }
 
 /* DESKTOP STYLES */
@@ -542,7 +589,7 @@ header{
     }
 
     .ab-us .title{
-        margin-top: 120px;
+        margin-top: 50px;
     }
 
     .ab-content{
@@ -600,12 +647,15 @@ header{
 
     .news{
         flex-wrap: nowrap;
-        
+        align-items: center;
+    }
+
+    .news .left-content{
+        width: 50%;
     }
 
     .swiper-container.mySwiper{
-        margin-left: auto;
-        
+        margin-left: 50px;
     }
 
 }

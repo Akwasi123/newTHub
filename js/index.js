@@ -95,10 +95,12 @@ const swiper1 = new Swiper('.swiper1', {
 
   const swiper2 = new Swiper(".mySwiper", {
     direction: "vertical",
+    loop: true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
+    effect: 'fade',
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
