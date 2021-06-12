@@ -591,8 +591,27 @@ footer{
 .newsletter input[type="button"]{
     padding: 15px;
     font-size: 1rem;
+    background-color: #8BB2FF;
+    color: black;
+    border: 1px solid #371C9E;
+    transition: all 0.3s ease;
+}
+
+.newsletter input[type="button"]:hover{
     background-color: #FF8482;
-    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.copyright-info{
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #0a5f97;
+}
+
+.copyright-info a{
+    color: #fff;
 }
 
 
@@ -717,6 +736,21 @@ footer{
 
     .swiper-container.mySwiper{
         margin-left: 50px;
+    }
+
+    .other-links{
+        width: 30%;
+    }
+
+    .newsletter{
+        width: 30%;
+        margin: 20px auto;
+    }
+
+    .res-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
 }
