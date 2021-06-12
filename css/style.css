@@ -231,12 +231,12 @@ header{
 
 .ab-us{
     margin-top: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
     /* border: 5px solid green; */
 }
 
 .ab-us .title{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .title{
@@ -534,6 +534,67 @@ header{
     color: #767779;
     width: 100%;
 }
+
+footer{
+    background-color: #116CAA;
+    height: fit-content;
+}
+
+.footer-content{
+    width: 90%;
+    margin: auto;
+}
+
+.brand p{
+    font-size: 2rem;
+    margin: 10px auto;
+}
+
+.socials{
+    margin: auto;
+    width: 100%;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #000051;
+    margin: 5px;
+}
+
+.other-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px 0px;
+}
+
+.other-links a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.newsletter{
+    width: 100%;
+}
+
+.newsletter input{
+    padding: 10px;
+    border: thin;
+    border-radius: 2px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.newsletter input[type="button"]{
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #FF8482;
+    color: white;
+}
+
 
 /* DESKTOP STYLES */
 
