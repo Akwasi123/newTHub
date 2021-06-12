@@ -620,7 +620,7 @@ footer{
 @media screen and (min-width: 50em) {
     header{
         position: fixed;
-        background: linear-gradient(to right, #371C9E, #2F489D);
+        background: linear-gradient(to right, #311996, #30359B, #2F489D);
         top: 0;
         width: 100%;
         border: 0;
