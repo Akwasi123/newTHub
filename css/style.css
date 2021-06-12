@@ -591,14 +591,14 @@ footer{
 .newsletter input[type="button"]{
     padding: 15px;
     font-size: 1rem;
-    background-color: #8BB2FF;
+    background-color: #FF8482;
     color: black;
-    border: 1px solid #371C9E;
+    border: 0;
+    box-shadow: 0px 2px 5px #0a5f97;
     transition: all 0.3s ease;
 }
 
 .newsletter input[type="button"]:hover{
-    background-color: #FF8482;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -618,6 +618,20 @@ footer{
 /* DESKTOP STYLES */
 
 @media screen and (min-width: 50em) {
+    header{
+        position: fixed;
+        background: linear-gradient(to right, #371C9E, #2F489D);
+        top: 0;
+        width: 100%;
+        border: 0;
+        height: 9vh;
+    }
+
+    .nav-container{
+        position: relative;
+        top: 0;
+    }
+
     .nav-links{
         display: flex;
     }
@@ -644,6 +658,7 @@ footer{
     }
 
     #welcome{
+        padding-top: 60px;
         font-size: 2rem;
     }
 
@@ -669,7 +684,7 @@ footer{
     }
 
     .ab-us .title{
-        margin-top: 50px;
+        margin-top: 90px;
     }
 
     .ab-content{
