@@ -18,67 +18,6 @@ body{
     height: 100%;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    height: 8vh;
-    /* border: 1px solid black; */
-    color: white;
-    z-index: 999;
-}
-
-.nav-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* border: 1px solid salmon; */
-    width: 90%;
-}
-
-.nav-brand{
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.nav-brand a{
-    font-size: 2rem;
-    text-decoration: none;
-    color: white;
-}
-
-.burger{
-    display: block;
-    z-index: 30;
-    cursor: pointer;
-}
-
-.burger div{
-    width: 25px;
-    margin: 3px;
-    padding: 2px;
-    border-radius: 10px;
-    background-color: white;
-    transition: all .3s ease;
-}
-
-.nav-links{
-    display: none;
-    align-items: center;
-    /* border: 1px solid red; */
-    list-style: none;
-    transition: all 0.5s ease;
-}
-
-.links{
-    margin-left: 50px;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
-    /* border: 1px solid brown; */
-}
-
 .bk-img{
     position: absolute;
     top: 0;
@@ -177,56 +116,6 @@ header{
     100%{
         transform: translateY(-100%);
     }
-}
-
-.burger.toggle .line1{
-    transform: rotate(45deg) translate(5px, 5px);
-}
-.burger.toggle .line2{
-    /* transform: translateX(-200px); */
-    opacity: 0;
-    
-}
-.burger.toggle .line3{
-    transform: rotate(-45deg) translate(5px, -5px);
-}
-
-.nav-links.navSlide{
-    position: fixed;
-    top: 8vh;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    display: block;
-    background-color: #371C9E;
-    z-index: 1000;
-    transition: all 0.5s ease;
-}
-
-.nav-links.slideIn{
-    animation: slideIn .5s ease forwards alternate;
-}
-
-
-@keyframes slideIn {
-    from{
-        transform: translateX(-100%);
-    }
-
-    to{
-        transform: translateX(0%);
-    }
-}
-
-
-.nav-links li a{
-    margin: 0;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin: 50px auto;
-    /* border: 1px solid black; */
-
 }
 
 .ab-us{
@@ -618,36 +507,6 @@ footer{
 /* DESKTOP STYLES */
 
 @media screen and (min-width: 50em) {
-    header{
-        position: fixed;
-        background: linear-gradient(to right, #311996, #30359B, #2F489D);
-        top: 0;
-        width: 100%;
-        border: 0;
-        height: 9vh;
-    }
-
-    .nav-container{
-        position: relative;
-        top: 0;
-    }
-
-    .nav-links{
-        display: flex;
-    }
-
-    .nav-links li a{
-        padding: 0 30px;
-    }
-
-    .nav-links li a:hover{
-        color: #000051;
-    }
-
-    .burger{
-        display: none;
-    }
-
     .bk-img{
         height: 85vh;
     }

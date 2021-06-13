@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    color: white;
+    z-index: 999;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.nav-brand{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-brand a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.burger{
+    display: block;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    margin: 3px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all .3s ease;
+}
+
+.nav-links{
+    display: none;
+    align-items: center;
+    list-style: none;
+    transition: all 0.5s ease;
+}
+
+.links{
+    /* margin-left: 50px; */
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.nav-links.navSlide{
+    position: fixed;
+    top: 8vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background-color: #371C9E;
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
+
+.nav-links.slideIn{
+    animation: slideIn .5s ease forwards alternate;
+}
+
+
+@keyframes slideIn {
+    from{
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+.nav-links li a{
+    display: inline-block;
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+@media screen and (min-width: 50em) {
+    header{
+        position: fixed;
+        background: linear-gradient(to right, #311996, #30359B, #2F489D);
+        top: 0;
+        width: 100%;
+        border: 0;
+        height: 9vh;
+    }
+
+    .nav-container{
+        position: relative;
+        top: 0;
+    }
+
+    .nav-links{
+        display: flex;
+    }
+
+    .nav-links li a{
+        margin: 30px;
+        padding: 0px;
+    }
+
+    .nav-links li a:hover{
+        color: #FF8482;
+    }
+
+    .burger{
+        display: none;
+    }
+}
