@@ -25,7 +25,7 @@ body{
     /* object-fit: scale-down; */
     height: 110vh;
     width: 100%;
-    background-image: url("../assets/img/backgrounds/final.svg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/img/backgrounds/2774835.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1000;
@@ -34,9 +34,10 @@ body{
 #welcome{
     text-align: center;
     font-size: 1.5rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.774);
     margin: 50px auto;
     width: 80%;
+    padding-top: 60px;
 }
 
 .changing-text{
@@ -50,7 +51,7 @@ body{
     font-size: 2.2rem;
     margin-top: 20px;
     text-transform: capitalize;
-    color: #000051;
+    color: #fff;
 }
 
 .changing-text span.text-in{
@@ -67,7 +68,7 @@ body{
     font-size: 1rem;
     width: 80%;
     margin: 30px auto;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.774);
 }
 
 .buttons{
@@ -78,23 +79,20 @@ body{
 }
 
 .buttons input[type="button"]{
-    padding: 15px;
+    padding: 20px;
     width: 90%;
-    background-color: transparent;
-    border-color: #000051;
-    border-width: thin;
     margin: 20px;
     font-size: 1rem;
+    background: #095E61;
     color: white;
-    transition: all 0.5s ease;
+    border: 0;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0px 1px 3px black;
     text-transform: uppercase;
-    
 }
 
 .buttons input[type="button"]:hover{
-    background-color: #000051;
+    background-color: #FF8482;
 }
 
 
@@ -132,18 +130,14 @@ body{
     font-size: 2.5rem;
     text-align: center;
     text-transform: capitalize;
-    /* margin-top: 50px; */
-    /* border: 1px solid black; */
 }
 
 .ab-content, .carousel{
     width: 90%;
     margin: 50px auto;
-    /* background-color: #000051; */
 }
 
 .ab-content .item{
-    /* border: 1px solid brown; */
     height: fit-content;
     width: 100%;
     margin-bottom: 40px;
@@ -168,14 +162,10 @@ body{
     text-align: center;
 }
 
-.ab-content .item .text{
-
-}
-
 .services{
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: #116CAA;
+    background-color: #095E61;
     color: white;
 }
 
@@ -245,7 +235,6 @@ body{
     flex-wrap: wrap;
     align-items: center;
     width: 90%;
-    /* padding: 20px; */
     margin: auto;
 }
     
@@ -285,7 +274,7 @@ body{
 .project-intro{
     height: 60vh;
     width: 100%;
-    background-image: url("../assets/img/backgrounds/Asset\ 6.png");
+    background-image: url("../assets/img/backgrounds/rocketBg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -425,7 +414,7 @@ body{
 }
 
 footer{
-    background-color: #116CAA;
+    background-color: #095E61;
     height: fit-content;
 }
 
@@ -496,7 +485,7 @@ footer{
     padding: 20px;
     text-align: center;
     font-size: 0.8rem;
-    background-color: #0a5f97;
+    background-color: #084749;
 }
 
 .copyright-info a{
@@ -517,7 +506,6 @@ footer{
     }
 
     #welcome{
-        padding-top: 60px;
         font-size: 2rem;
     }
 
@@ -533,13 +521,9 @@ footer{
     }
 
     .buttons input[type="button"]{
-        width: 15%;
+        width: 20%;
         padding: 20px;
         border-width: thin;
-    }
-    
-    .buttons input[type="button"]:hover{
-        background-color: #000051;
     }
 
     .ab-us .title{
@@ -628,5 +612,6 @@ footer{
     }
 
 }
+
 
 
