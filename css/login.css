@@ -7,15 +7,208 @@
 
 body{
     height: 100vh;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .login-container{
-    height: 100%;
-    border: 1px solid black;
+    height: 100vh;
+    /* border: 1px solid black; */
     display: flex;
+    /* align-items: center; */
 }
 
 .left-pane{
-    flex-basis: 35%;
-    background-color: #0a6063;
+    display: none;
+}
+
+.right-pane{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin: auto;
+    height: 100vh;
+    
+}
+
+.right-pane .title{
+    font-size: 2rem;
+}
+
+.form-container{
+    display: block;
+}
+
+.content{
+    width: 90%;
+    height: 100%;
+    margin: 60px auto;
+}
+
+.content .title{
+    margin-bottom: 50px;
+}
+
+.field label{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    line-height: 15px;
+}
+
+label a{
+    float: right;
+    text-decoration: underline;
+    color: white;
+}
+
+.field{
+    margin-top: 30px;
+}
+
+.field input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border-width: thin;
+    border: 0;
+    background-color: #F3F3F4;
+}
+
+.signGoogle button{
+    padding: 15px;
+    width: 100%;
+    border: thin;
+    text-align: left;
+    background-color: #1973E8;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+form button{
+    padding: 15px;
+    width: 100%;
+    border: thin;
+    background-color: #ff8482;
+    color: white;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+hr.divider{
+    overflow: visible;
+    padding: 0;
+    margin-bottom: 10px;
+    border: none;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: medium;
+    border-top: 1px solid #e0e0e0;
+    color: #6e6d7a;
+    text-align: center;
+}
+
+hr.divider::after {
+    content: 'Or';
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    font: normal 14px/14px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+    background: #fff;
+}
+
+.content .brand{
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.membership{
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.membership a{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 50em) {
+    .left-pane{
+        display: block;
+        flex-basis: 30%;
+        background-color: #0a6063;
+    }
+
+    .left-inner{
+        /* width: 80%; */
+        margin: 100px auto;
+    }
+
+    .left-inner .brand{
+        display: block;
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .left-inner .text{
+        font-size: 1.5rem;
+        color: white;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .left-inner img{
+        display: block;
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 100px;
+    }
+
+    .attribution{
+        display: block;
+        color: white;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .attribution a{
+        color: #ff8482;
+    }
+
+    .right-pane{
+        flex-basis: 65%;
+        height: 100%;
+        background-color: white;
+        color: black;
+    }
+
+    .right-pane .title{
+        font-size: 2rem;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .content .brand{
+        display: none;
+    }
+
+
+    
 }
