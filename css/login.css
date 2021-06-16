@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+}
+
+.login-container{
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.left-pane{
+    flex-basis: 35%;
+    background-color: #0a6063;
+}
