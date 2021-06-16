@@ -24,7 +24,7 @@ header{
     color: white;
     z-index: 999;
     background-color: #095E61;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
@@ -88,10 +88,10 @@ header{
     background-color: #095E61;
     z-index: 1000;
     transition: all 0.5s ease;
-    overflow: hidden;
 }
 
 .nav-links.slideIn{
+    overflow: hidden;
     animation: slideIn .5s ease forwards alternate;
 }
 

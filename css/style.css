@@ -35,12 +35,12 @@ body {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.774);
   margin: 50px auto;
-  width: 80%;
-  padding-top: 60px;
+  width: 90%;
+  padding-top: 20px;
 }
 
 .changing-text {
-  margin-top: 30px;
+  margin-top: 0px;
   overflow: hidden;
 }
 
@@ -48,7 +48,7 @@ body {
   display: none;
   text-align: center;
   font-size: 2.2rem;
-  margin-top: 20px;
+  margin-top: 0px;
   text-transform: capitalize;
   color: #fff;
 }
@@ -65,7 +65,7 @@ body {
 .sometext {
   text-align: center;
   font-size: 1rem;
-  width: 80%;
+  width: 90%;
   margin: 30px auto;
   color: rgba(255, 255, 255, 0.774);
 }
@@ -147,12 +147,16 @@ body {
 
 .ab-content .item p {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .ab-content .item .number {
   font-size: 3rem;
-  color: #000051;
+  color: #095e61;
+}
+
+.ab-content .item .heading{
+    font-size: 2rem;
 }
 
 .heading {
@@ -184,6 +188,7 @@ body {
   /* padding: 30px !important; */
   height: 32em !important;
   background-color: #fff;
+  border-radius: 3px;
 }
 
 .swiper1 .swiper-slide .item img {
@@ -237,7 +242,7 @@ body {
 .div2 .item img,
 .div3 .item img {
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .div1 .item,
@@ -248,6 +253,7 @@ body {
   margin: 20px auto;
   color: black;
   padding: 20px;
+  border-radius: 3px;
   text-align: center;
   background-color: rgba(255, 255, 255);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
@@ -510,6 +516,7 @@ footer {
 
   #welcome {
     font-size: 2rem;
+    padding-top: 80px;
   }
 
   .sometext {
