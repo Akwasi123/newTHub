@@ -140,9 +140,9 @@ input[type="button"]{
         /* flex: 1; */
         position: absolute;
         width: 50%;
-        left: 42%;
+        left: 43%;
         display: block;
-        opacity: .5;
+        opacity: 1;
     }
 
     .network img{
