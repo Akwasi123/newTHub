@@ -90,9 +90,6 @@ body {
   text-transform: uppercase;
 }
 
-.buttons input[type="button"]:hover {
-  background-color: #ff8482;
-}
 
 @keyframes textIn {
   0% {
