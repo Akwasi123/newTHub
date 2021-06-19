@@ -2,7 +2,7 @@ const swiper1 = new Swiper('.swiper1', {
     // Optional parameterr
     spaceBetween: 30,
     loop: true,
-    speed: 1000,
+    speed: 1500,
     effect: 'slide',
     autoplay: {
         delay: 5000,

@@ -20,5 +20,21 @@ burger.addEventListener('click', () =>{
 });
 
 
-// carousel code
+// scroll to top
+const scrollButton = document.querySelector('.scrollToTop');
+window.onscroll = function(){scrollFunction()};
+
+function scrollFunction(){
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+        scrollButton.style.display = 'block';
+    }
+    else{
+        scrollButton.style.display = 'none';
+    }
+}
+
+topFunction = ()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
