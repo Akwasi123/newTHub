@@ -88,7 +88,7 @@ label a{
     padding: 10px;
     border: thin;
     text-align: left;
-    background-color: #0a6063;
+    background-color: #f5514e;
     color: white;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -100,7 +100,7 @@ form button{
     padding: 15px;
     width: 100%;
     border: thin;
-    background-color: #ff8482;
+    background-color: #f5514e;
     color: white;
     border-radius: 5px;
     margin-top: 50px;
@@ -172,19 +172,28 @@ hr.divider::after {
 
 
 .fa-google {
-    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    background: conic-gradient(from -45deg, #fff 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
 
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.close i{
+    color: black;
+}
 
 @media screen and (min-width: 50em) {
     .left-pane{
         display: block;
         flex-basis: 30%;
-        background-color: #0a6063;
+        background-color: #f5514e;
     }
 
     .left-inner{
@@ -223,7 +232,7 @@ hr.divider::after {
     }
 
     .attribution a{
-        color: #ff8482;
+        color: #fff;
     }
 
     .right-pane{

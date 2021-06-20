@@ -23,7 +23,7 @@ header{
     height: 8vh;
     color: white;
     z-index: 999;
-    background-color: #095E61;
+    background-color: #f5514e;
     width: 100%;
     position: fixed;
     top: 0;
@@ -85,7 +85,7 @@ header{
     height: 100vh;
     width: 100%;
     display: block;
-    background-color: #095E61;
+    background-color: #f5514e;
     z-index: 1000;
     transition: all 0.5s ease;
 }

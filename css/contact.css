@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #0a6063;
+    background: #f5514e;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -107,7 +107,7 @@ textarea{
     text-align: center;
     border: none;
     cursor: pointer;
-    background-color: #ff8482;
+    background-color: #f5514e;
     border-radius: 5px;
     color: #fff;
 
@@ -116,23 +116,24 @@ textarea{
 .serviceBlock{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    width: 100%;
+    justify-content: space-between;
+    flex-basis: 100%;
     margin: 20px auto;
     /* border: 1px solid black; */
 }
 
 .serviceBlock button{
-    width: calc();
+    width: 200px;
     padding: 10px;
-    margin: 0px auto;
-    border: 0;
+    margin: 0 20px;
+    border-width: thin;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .serviceBlock button:focus{
-    border: 1px solid #ff8482;
+    border-color: #f5514e;
 }
 
 i{
