@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.bk-img {
+    position: absolute;
+    top: 0;
+    /* border: 5px solid red; */
+    /* object-fit: scale-down; */
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+      url("../assets/img/backgrounds/mainBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1000;
+  }
+
+  .heading{
+    padding-top: 150px;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+  }
+
+  .sometext{
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .button-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .button-container button{
+    padding: 15px;
+    font-size: 1rem;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #f5514e;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+  @media screen and (min-width: 50em) {
+    .bk-img {
+        height: 80vh;
+    }
+
+    .heading{
+      padding-top: 50px;
+      font-size: 8rem;
+    }
+  
+    .sometext{
+      font-size: 1.2rem;
+      width: 50%;
+    }
+  
+    .button-container{
+      width: 90%;
+      flex-direction: row;
+    }
+  
+    .button-container button{
+      margin: 20px;
+      width: 20%;
+      font-size: 1.3rem;
+      background: transparent;
+      border: 1px solid #f5514e;
+      transition: all 0.5s ease;
+    }
+
+    .button-container button:hover{
+      background-color: #f5514e;
+    }
+  
+  }
+  

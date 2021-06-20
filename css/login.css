@@ -193,7 +193,7 @@ hr.divider::after {
     .left-pane{
         display: block;
         flex-basis: 30%;
-        background-color: #f5514e;
+        background-color: #f5514eaf;
     }
 
     .left-inner{

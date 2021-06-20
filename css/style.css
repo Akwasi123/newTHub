@@ -23,8 +23,8 @@ body {
   /* object-fit: scale-down; */
   height: 110vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../assets/img/backgrounds/mainBg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../assets/img/backgrounds/eventsBg.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1000;
@@ -427,8 +427,8 @@ body {
 }
 
 footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-  /* background-color: #f5514e; */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
+  background-color: #ece9e9;
   height: fit-content;
 }
 
@@ -449,7 +449,7 @@ footer {
 
 .socials a {
   text-decoration: none;
-  color: #fff;
+  color: #f5514e;
   margin: 5px;
 }
 
@@ -464,7 +464,7 @@ footer {
 .other-links a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: black;
   margin-bottom: 5px;
 }
 
@@ -520,7 +520,7 @@ footer {
 }
 
 .fa-arrow-alt-circle-up {
-  color: skyblue;
+  color: black;
   cursor: pointer;
 }
 
@@ -555,7 +555,14 @@ footer {
   .buttons input[type="button"] {
     width: 20%;
     padding: 20px;
+    background-color: transparent;
+    border: 1px solid #f5514e;
     border-width: thin;
+    transition: all 0.5s ease;
+  }
+
+  .buttons input[type="button"]:hover{
+    background-color: #f5514e;
   }
 
   .ab-us {
