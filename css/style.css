@@ -148,7 +148,7 @@ body {
 
 .ab-content .item .number {
   font-size: 3rem;
-  color: #095e61;
+  color: #f5514e;
 }
 
 .ab-content .item .heading {
@@ -300,6 +300,11 @@ body {
   border-style: none !important;
   height: max-content;
   background-color: #f5514e;
+  color: rgba(255, 255, 255, 0.774);
+}
+
+.proj .title{
+  color: white;
 }
 
 .content {
