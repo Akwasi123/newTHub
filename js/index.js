@@ -21,8 +21,12 @@ burger.addEventListener('click', () =>{
 
 
 // scroll to top
+const header = document.querySelector('header');
 const scrollButton = document.querySelector('.scrollToTop');
-window.onscroll = function(){scrollFunction()};
+window.onscroll = function(){
+    scrollFunction()
+    headerFunction()
+};
 
 function scrollFunction(){
     if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
@@ -37,4 +41,17 @@ topFunction = ()=>{
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+function headerFunction(){
+    if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600){
+        header.classList.add('stickyH');
+    }
+    else{
+        header.classList.remove('stickyH');
+    }
+}
+
+
+
 

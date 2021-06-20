@@ -36,11 +36,11 @@ body {
   color: rgba(255, 255, 255, 0.774);
   margin: 50px auto;
   width: 90%;
-  padding-top: 20px;
+  padding-top: 100px;
 }
 
 .changing-text {
-  margin-top: 0px;
+  margin: 0px;
   overflow: hidden;
 }
 
@@ -66,7 +66,7 @@ body {
   text-align: center;
   font-size: 1rem;
   width: 90%;
-  margin: 30px auto;
+  margin: 50px auto;
   color: rgba(255, 255, 255, 0.774);
 }
 
@@ -82,7 +82,7 @@ body {
   width: 90%;
   margin: 20px;
   font-size: 1rem;
-  background: #095e61;
+  background: #f5514e;
   color: white;
   border: 0;
   border-radius: 5px;
@@ -110,8 +110,8 @@ body {
 }
 
 .ab-us {
-  margin-top: 30px;
-  padding-top: 10px;
+  margin-top: 50px;
+  padding-top: 50px;
   /* border: 5px solid green; */
 }
 
@@ -259,7 +259,16 @@ body {
 .div2 .item .text,
 .div3 .item .text {
   color: black;
+  
 }
+.div1 .item .heading,
+.div2 .item .heading,
+.div3 .item .heading {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
 
 .pandS {
   height: 30vh;
@@ -475,10 +484,10 @@ footer {
 .newsletter input[type="button"] {
   padding: 15px;
   font-size: 1rem;
-  background-color: #ff8482;
-  color: black;
+  background-color: #f5514e;
+  color: white;
   border: 0;
-  box-shadow: 0px 2px 5px #0a5f97;
+  border-radius: 5px;
   transition: all 0.3s ease;
 }
 
@@ -527,13 +536,13 @@ footer {
 
   #welcome {
     font-size: 2rem;
-    padding-top: 80px;
+    padding-top: 0px;
   }
 
   .sometext {
     font-size: 1.2rem;
     width: 80%;
-    /* margin-top: 70px; */
+    margin-top: 0px;
   }
 
   .buttons {
@@ -547,8 +556,10 @@ footer {
     border-width: thin;
   }
 
-  .ab-us .title {
-    margin-top: 100px;
+  .ab-us {
+    margin-top: 0px;
+    padding-top: 0px;
+    /* border: 5px solid green; */
   }
 
   .ab-content {

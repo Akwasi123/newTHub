@@ -24,9 +24,9 @@ header{
     color: white;
     z-index: 999;
     background-color: #095E61;
-    position: sticky;
-    top: 0;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .nav-container{
@@ -126,14 +126,18 @@ header{
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
+
+
+
 @media screen and (min-width: 50em) {
     header{
-        position: fixed;
-        background: #095E61;
+        position: relative;
+        background: transparent;
         top: 0;
         width: 100%;
         border: 0;
         height: 9vh;
+        transition: all 0.8s ease;
     }
 
     .header-transparent{
@@ -161,5 +165,10 @@ header{
 
     .burger{
         display: none;
+    }
+
+    .stickyH{
+        position: sticky;
+        background-color: #f5514e;
     }
 }
