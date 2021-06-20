@@ -342,13 +342,18 @@ body {
   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 1.3rem;
-  background-color: #bb413f;
+  font-size: 1.1rem;
+  background-color: #f5514e;
   color: white;
   border: 0;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+}
+
+.side-content input[type="button"]{
+  background-color: #fafafa;
+  color: black;
 }
 
 .news {
@@ -478,7 +483,7 @@ footer {
 .newsletter input[type="button"] {
   padding: 15px;
   font-size: 1rem;
-  background-color: #bb413f;
+  background-color: #f5514e;
   color: white;
   border: 0;
   border-radius: 5px;
