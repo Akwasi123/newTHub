@@ -124,15 +124,17 @@ textarea{
 
 .serviceBlock button{
     width: 200px;
-    padding: 10px;
+    padding: 15px;
     margin: 0 20px;
-    border-width: thin;
+    border: 1px solid transparent;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .serviceBlock button:focus{
+    border-color:#f5514e;
+    border-width: thin;
     border-color: #f5514e;
 }
 

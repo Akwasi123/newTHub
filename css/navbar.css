@@ -205,6 +205,10 @@ footer {
   margin: auto;
 }
 
+.active{
+    border-bottom: 1px solid white;
+}
+
 @media screen and (min-width: 50em) {
   header {
     position: relative;
@@ -216,11 +220,6 @@ footer {
     transition: all 0.8s ease;
   }
 
-  .header-transparent {
-    background: transparent;
-    position: relative;
-  }
-
   .nav-container {
     position: relative;
     top: 0;
@@ -228,11 +227,19 @@ footer {
 
   .nav-links {
     display: flex;
+    justify-content: space-between;
+    width: 700px;
   }
 
-  .nav-links li a {
-    margin: 30px;
+  .nav-links li a{
+    margin: 30px auto;
     padding: 0px;
+    width: fit-content;
+  }
+
+  .nav-links li{
+      text-align: center;
+      width: fit-content;
   }
 
   .nav-links li a:hover {
@@ -244,8 +251,13 @@ footer {
   }
 
   .stickyH {
-    position: fixed;
+    position: sticky;
     background-color: #f5514e;
+  }
+
+  .stickyH .nav-links li a:hover{
+      color: white;
+      font-size: 1.05rem;
   }
 
   .other-links {

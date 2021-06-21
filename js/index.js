@@ -24,16 +24,18 @@ burger.addEventListener('click', () =>{
 const header = document.querySelector('header');
 const scrollButton = document.querySelector('.scrollToTop');
 window.onscroll = function(){
-    scrollFunction()
-    headerFunction()
+    scrollFunction();
+    // headerFunction();
 };
 
 function scrollFunction(){
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+    if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600){
         scrollButton.style.display = 'block';
+        header.classList.add('stickyH');
     }
     else{
         scrollButton.style.display = 'none';
+        header.classList.remove('stickyH');
     }
 }
 
@@ -43,14 +45,14 @@ topFunction = ()=>{
 }
 
 
-function headerFunction(){
-    if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600){
-        header.classList.add('stickyH');
-    }
-    else{
-        header.classList.remove('stickyH');
-    }
-}
+// function headerFunction(){
+//     if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600){
+        
+//     }
+//     else{
+//         header.classList.remove('stickyH');
+//     }
+// }
 
 
 
