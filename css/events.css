@@ -80,7 +80,7 @@ body {
 .title::after{
   content: "";
   display: block;
-  border-bottom: 5px double #f5514e;
+  border-bottom: 5px dashed #f5514e;
   width: 10%;
   margin: auto;
 }
