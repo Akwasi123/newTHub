@@ -74,7 +74,7 @@ body {
 .title {
   font-size: 2rem;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 .title::after{
@@ -96,7 +96,7 @@ body {
 
 .event img {
   width: 100%;
-  padding: 0;
+  padding: 0; 
 }
 
 .event .text{
@@ -195,32 +195,39 @@ body {
   .title{
     font-size: 3rem;
     margin-bottom: 30px;
+    padding-top: 80px;
   }
 
+  .events-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
 
   .event{
     display: flex;
-    align-items: center;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    width: 30%;
   }
 
   .event img{
-    width: 50%;
+    width: 100%;
   }
 
   .event .heading, .event .text{
-    text-align: left;
-    padding: 0;
-    margin: 10px;
-    width: 70%;
+    text-align: center;
+    width: 100%;
+    padding: 0px auto;
+    margin: 5px auto;
   }
 
   .event button{
-    margin-left: 10px;
-  }
-
-  .event .right{
-    margin-left: 15px;
+    margin: 10px auto;
   }
 
   .scrollToTop {
