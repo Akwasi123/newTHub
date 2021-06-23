@@ -24,7 +24,7 @@ body {
   height: 80vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-    url("../assets/img/backgrounds/aboutBg.png");
+    url("../assets/img/backgrounds/landing-bg_2.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1000;
@@ -75,78 +75,45 @@ body {
   cursor: pointer;
 }
 
-.introduction {
-  width: 90%;
-  margin: auto;
-}
-
-.intro-container {
-  margin-top: 50px;
-}
-
-.intro-container .text-content .title {
-  padding-top: 0;
-}
-
-.intro-container .text-content {
-  width: 100%;
-  margin: 0px auto 50px auto;
-  text-align: center;
-}
-
-.intro-container .text-content .title::after {
-  display: none;
-}
-
-.tabs {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-
-.tabs button {
-  padding: 10px;
-  width: fit-content;
-  border: 0;
-  background-color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.tabs button.active {
-  border-bottom: 1px solid #f5514e;
-}
-
-.tab-content {
-  display: none;
-  text-align: center;
-}
-
-.tab-content .title {
-  font-size: 1rem;
-  padding-top: 0px;
-}
-
-.tab-content .title::after {
-  display: none;
-}
-
-.tab-content {
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
-
-.text-content {
-  margin: 180px auto 50px auto;
-}
-
-.text-content p, .m-content{
+.services {
     width: 90%;
-    margin: 20px auto;
-    text-align: left;
+    margin: auto;
 }
 
+.div1 .item img,
+.div2 .item img,
+.div3 .item img {
+  display: block;
+  margin: 0px auto;
+}
 
+.div1 .item,
+.div2 .item,
+.div3 .item {
+  height: 22em;
+  width: 90%;
+  margin: 10px;
+  color: black;
+  padding: 20px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.div1 .item .text,
+.div2 .item .text,
+.div3 .item .text {
+  color: black;
+}
+.div1 .item .heading,
+.div2 .item .heading,
+.div3 .item .heading {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-top: 20px;
+}
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
@@ -191,18 +158,14 @@ body {
     padding-bottom: 60px;
     padding-top: 20px;
   }
-  .tabs {
-    width: 100%;
+
+  .illustration {
+    max-width: 50%;
     margin: auto;
   }
 
-  .tabs button {
-    font-size: 2rem;
-    width: fit-content;
+  .illustration img {
+    width: 100%;
   }
 
-  .tab-content {
-    width: 50%;
-    margin: 50px auto;
-  }
 }
