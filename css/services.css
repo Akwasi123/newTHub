@@ -76,8 +76,8 @@ body {
 }
 
 .services {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
 .div1 .item img,
@@ -168,4 +168,15 @@ body {
     width: 100%;
   }
 
+  .services {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .div1 .item,
+  .div2 .item,
+  .div3 .item {
+      width: 400px;
+  }
 }
