@@ -273,7 +273,7 @@ body {
   border-radius: 3px;
   text-align: center;
   background-color: rgba(255, 255, 255);
-  /* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .div1 .item .text,
@@ -594,7 +594,7 @@ footer {
     /* border: 5px solid green; */
   }
 
-  .ab-content {
+  .ab-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -616,14 +616,15 @@ footer {
   }
 
   .parent {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .div1 .item,
   .div2 .item,
   .div3 .item {
-    width: auto;
-    margin: 20px;
+    width: 350px;
+    margin: 20px 20px;
   }
 
   .project-intro {
@@ -688,8 +689,8 @@ footer {
   }
 }
 
-@media screen and (min-width: 70em) {
+@media screen and (max-width: 75em) {
   .ab-content{
-    flex: wrap;
+    justify-content: space-evenly;
   }
 }
