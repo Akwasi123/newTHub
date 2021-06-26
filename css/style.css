@@ -590,19 +590,25 @@ footer {
   .ab-us {
     margin-top: 30px;
     padding-top: 30px;
+    /* width: 100%; */
     /* border: 5px solid green; */
   }
 
   .ab-content {
     display: flex;
-    /* flex-wrap: wrap; */
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     /* width: 100%; */
   }
 
   .ab-content .item {
-    margin: 0 15px;
+    margin: 20px 0;
     height: 25em;
+    width: 350px;
+  }
+
+  .ab-content .item:last-child{
+    justify-self: flex-end;
   }
 
   .title {
@@ -679,5 +685,11 @@ footer {
 
   .scrollToTop {
     right: 20px;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .ab-content{
+    flex: wrap;
   }
 }
